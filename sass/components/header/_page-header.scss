@@ -1,8 +1,47 @@
 .page-header {
+    position: relative;
     background-color: $heder-bg-color;
     border-bottom: 1px solid #ECECEC;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .logo__item  {
     color: $accent-color;
 }
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.page-nav__conteiner {
+    position: absolute;
+
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $heder-bg-color;
+
+    &.is-open {
+        display: block;
+    }
+}
+

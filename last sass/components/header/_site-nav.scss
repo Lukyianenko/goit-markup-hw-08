@@ -1,17 +1,16 @@
 .conteiner-nav {
     display: flex;
-    align-items: center;
     }
 
-//     .page-nav {
-//         display: flex;
-//         
-//     }
+    .page-nav {
+        display: flex;
+        align-items: center;
+    }
     
-    // .site-nav {
-    //     display: flex;
-    //     margin-left: 93px;
-    // }
+    .site-nav {
+        display: flex;
+        margin-left: 93px;
+    }
 
     .site-nav {
         &__item + &__item {

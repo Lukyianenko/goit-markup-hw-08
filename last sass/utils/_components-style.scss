@@ -5,7 +5,7 @@ body {
     }
 
 .list {
-    list-style: none;
+     list-style: none;
     padding: 0;
     margin: 0;
     }
@@ -17,39 +17,23 @@ img {
 .conteiner {
     margin-left: auto;
     margin-right: auto;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
     }
 
 .logo {
         color: #000000;
         font-family: Raleway, sans-serif;
         font-weight: 700;
-        font-size: 24px;
-        line-height: calc(28 / 24);
+        font-size: 26px;
+        line-height: 1.19;
         text-decoration: none;
-
-        @media screen and (min-width: 768px) {
-            font-size: 26px;
-            line-height: calc(31 / 26);
-        }
     }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
     pointer-events: none;
 }
     
