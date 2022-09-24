@@ -1,0 +1,116 @@
+.conteiner-nav {
+    display: flex;
+    }
+
+    .page-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .site-nav {
+        display: flex;
+        margin-left: 93px;
+    }
+
+    .site-nav {
+        &__item + &__item {
+        margin-left: 50px;
+        }
+    }
+
+    .site-nav {
+        &__link {
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        color: $primery-text-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    
+        transition: color 250ms $timing-function;
+        }
+    }   
+
+    .site-nav  {
+        &__link:hover,
+        &__link:focus {
+        color: $accent-color;
+        }
+    }
+
+    .site-nav {
+        &__link.current
+        {
+            color: $accent-color;
+        }
+    }
+
+    .current::after {
+        position: absolute;
+        bottom: -1px;
+        content: '';
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: $accent-color;
+    }
+
+    .auth-nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    
+    .auth-nav {
+        &__icon 
+        {
+            display: block;
+            fill: currentColor;
+          margin-right: 10px;
+        }
+        }
+   
+.auth-nav  {
+    &__icon:hover,
+    &__icon:focus
+    {
+        fill: $accent-color;
+    }
+}
+
+.auth-nav {
+    &__item + &__item {
+    margin-left: 50px;
+    }
+}
+
+.auth-nav {
+    &__link {
+    display: flex;
+    color: $paragraph-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    align-items: center;
+
+    transition: color 250ms $timing-function;
+    }
+}
+
+.auth-nav {
+    &__link:hover,
+    &__link:focus {
+    color: $accent-color;
+    }
+}

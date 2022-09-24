@@ -1,0 +1,31 @@
+.portfolio-works__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.check-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms $timing-function;
+}
+
+.portfolio-works__item:hover {
+    .check-out {
+        transform: translateY(0);
+    }
+}
+
+.check-out {
+    &__text {
+    font-size: 18px;
+    line-height: 1.56;
+    color: #FFFFFF;
+    }
+}
