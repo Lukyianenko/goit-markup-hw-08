@@ -4,7 +4,6 @@
     border-bottom: 1px solid #ECECEC;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 0;
 }
 
 .logo__item  {
@@ -19,6 +18,15 @@
     padding: 0;
     border: none;
     background-color: transparent;
+@media screen and (min-width: 768px) {
+    display: none;
+}
+}
+
+.menu-button {
+    .icon-menu:hover {
+        fill: $accent-color; 
+    }
 }
 
 .menu-button-open {
@@ -26,23 +34,14 @@
     right: 15px;
     top: 10px;
 
+    .icon-cross:hover {
+        fill: $accent-color;
+    }
 }
 
-// .menu-button  {
-//     .icon-cross{
-//     display: none;
-//     }
-// }
 
-// .menu-button.is-open {
-//     .icon-cross {
-//     display: block;
-//     }
-//     .icon-menu {
-//         display: none;
-//     }
-// }
 
+@media screen and (max-width: 767px) {
 .page-nav__conteiner {
     position: absolute;
 
@@ -56,4 +55,5 @@
         display: block;
     }
 } 
+}
 
