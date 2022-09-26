@@ -4,16 +4,19 @@
     }
 
 .page-nav { 
-
-    @media screen and (min-width: 1200px) { display: flex;
+    @media screen and (min-width: 768px) { 
+        display: flex;
+        align-items: center;
 }     
 }
     
 .site-nav {
-   
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+    display: flex;
     position: relative;
-    display: inline-block;
+    margin-left: 87px;
+}
+@media screen and (min-width: 1200px) {
     margin-left: 93px;
 }
 }
@@ -26,6 +29,12 @@
     &__item:last-child {
         margin-bottom: 302px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    &__item:not(:last-child) {
+        margin-right: 50px;
+}
 }
  @media screen and (min-width: 1200px) {
         &__item + &__item {
@@ -50,7 +59,16 @@
         }
 
     }
-
+    @media screen and (min-width: 768px) {
+        &__link {
+            position: relative;
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 14px;
+            line-height: 1.14;
+        }
+    }
 @media screen and (min-width: 1200px) {
     &__link {
         position: relative;
@@ -90,11 +108,14 @@
 }
 }
 
-//     .auth-nav {
-//         display: flex;
-//         align-items: center;
-//         margin-left: auto;
-//     }
+@media screen and (min-width: 768px) {
+.auth-nav {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+}
     
 .auth-nav {
 @media screen and (max-width: 767px) {
@@ -104,9 +125,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    &__item {
+        display: flex;
+    }
      &__icon 
         {
-        display: block;
         fill: currentColor;
         margin-right: 10px;
      }
@@ -128,8 +151,11 @@
 // }
 
 .auth-nav {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
     display:flex;
 	flex-direction:column;
+    }
     &__link {
         color: $paragraph-text-color;
         font-weight: 500;
@@ -156,9 +182,24 @@
     &__item:nth-child(2) {
         margin-bottom: 32px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    &__item:first-child {
+        margin-bottom: 10px;
+    }
+    &__item {
+        margin-left: auto;
+        font-size: 12px;
+        line-height: calc( 14 / 12 );
+    }
+    &__link {
+        align-items: center;
+    }
+}
 
 }
-}
+
 
 
 //     &__link {
@@ -178,9 +219,37 @@
 //     }
 // }
 
-// .auth-nav {
-//     &__link:hover,
-//     &__link:focus {
-//     color: $accent-color;
-//     }
-// }
+.auth-nav {
+@media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: auto;
+}
+
+    &__link:hover,
+    &__link:focus {
+    color: $accent-color;
+    }
+}
+
+.social-nav {
+    display:flex;
+    &__link {
+        color: $accent-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc( 22 / 18 );
+        text-decoration: none;
+    }
+    &__line {
+        display: block;
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+@media screen and (min-width: 768px) {
+    display: none;
+}
+}

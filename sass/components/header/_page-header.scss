@@ -2,8 +2,10 @@
     position: relative;
     background-color: $heder-bg-color;
     border-bottom: 1px solid #ECECEC;
+@media screen and (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 10px;
+}
 }
 
 .logo__item  {
@@ -55,5 +57,11 @@
         display: block;
     }
 } 
+}
+
+@media screen and (min-width: 768px) {
+    .page-nav__conteiner {
+        display: flex;
+    }
 }
 
