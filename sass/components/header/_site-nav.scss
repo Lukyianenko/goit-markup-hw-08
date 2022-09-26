@@ -3,115 +3,141 @@
     align-items: center;
     }
 
-//     .page-nav {
-//         display: flex;
-//         
-//     }
-    
-    // .site-nav {
-    //     display: flex;
-    //     margin-left: 93px;
-    // }
+.page-nav { 
 
-    .site-nav {
+    @media screen and (min-width: 1200px) { display: flex;
+}     
+}
+    
+.site-nav {
+   
+@media screen and (min-width: 1200px) {
+    position: relative;
+    display: inline-block;
+    margin-left: 93px;
+}
+}
+
+.site-nav {
+@media screen and (max-width: 480px) {
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__item:last-child {
+        margin-bottom: 302px;
+    }
+}
+ @media screen and (min-width: 1200px) {
         &__item + &__item {
         margin-left: 50px;
         }
+}
+}
+
+.site-nav {
+    &__link { 
+        color: $primery-text-color;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: color 250ms $timing-function;
     }
 
-    .site-nav {
-        &__link {
+@media screen and (max-width: 480px) {
+    &__link {
+            font-size: 40px;
+            line-height: calc( 47 / 40 );
+        }
+
+    }
+
+@media screen and (min-width: 1200px) {
+    &__link {
         position: relative;
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-    
-        color: $primery-text-color;
-        font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-    
-        transition: color 250ms $timing-function;
-        }
-    }   
-
-    .site-nav  {
+    }
+}
+}
+        
+ .site-nav  {
         &__link:hover,
         &__link:focus {
         color: $accent-color;
-        }
     }
+}
 
-    .site-nav {
-        &__link.current
-        {
-            color: $accent-color;
-        }
-    }
-
-    .current::after {
-        position: absolute;
-        bottom: -1px;
-        content: '';
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
-        background-color: $accent-color;
-    }
-
-    .auth-nav {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-    }
-    
-    .auth-nav {
-        &__icon 
-        {
-            display: block;
-            fill: currentColor;
-          margin-right: 10px;
-        }
-        }
-   
-.auth-nav  {
-    &__icon:hover,
-    &__icon:focus
+.site-nav {
+     &__link.current
     {
-        fill: $accent-color;
-    }
+         color: $accent-color;
+     }
 }
 
-.auth-nav {
-    &__item + &__item {
-    margin-left: 50px;
-    }
-}
+//     // .current::after {
+//     //     position: absolute;
+//     //     bottom: -1px;
+//     //     content: '';
+//     //     display: block;
+//     //     height: 4px;
+//     //     width: 100%;
+//     //     border-radius: 2px;
+//     //     background-color: $accent-color;
+//     // }
 
-.auth-nav {
-    &__link {
-    display: flex;
-    color: $paragraph-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
+//     .auth-nav {
+//         display: flex;
+//         align-items: center;
+//         margin-left: auto;
+//     }
+    
+//     .auth-nav {
+//         &__icon 
+//         {
+//             display: block;
+//             fill: currentColor;
+//           margin-right: 10px;
+//         }
+//         }
+   
+// .auth-nav  {
+//     &__icon:hover,
+//     &__icon:focus
+//     {
+//         fill: $accent-color;
+//     }
+// }
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    align-items: center;
+// .auth-nav {
+//     &__item + &__item {
+//     margin-left: 50px;
+//     }
+// }
 
-    transition: color 250ms $timing-function;
-    }
-}
+// .auth-nav {
+//     &__link {
+//     display: flex;
+//     color: $paragraph-text-color;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
 
-.auth-nav {
-    &__link:hover,
-    &__link:focus {
-    color: $accent-color;
-    }
-}
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     align-items: center;
+
+//     transition: color 250ms $timing-function;
+//     }
+// }
+
+// .auth-nav {
+//     &__link:hover,
+//     &__link:focus {
+//     color: $accent-color;
+//     }
+// }
