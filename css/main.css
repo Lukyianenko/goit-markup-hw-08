@@ -553,10 +553,47 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .team__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .team__item {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .team__item {
+    max-width: 450px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199x) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 
 .team__title {
@@ -567,9 +604,70 @@ img {
   line-height: 1.19;
 }
 
+.team__img {
+  width: 100%;
+  height: auto;
+}
+
 .team__text {
   margin-top: 10px;
   margin-bottom: 16px;
   color: #757575;
   line-height: 1.19;
+}
+
+.team-icons {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  .team-icons {
+    max-width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.team-icons__link {
+  display: block;
+  color: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icons__icon {
+  fill: currentColor;
+}
+
+.team-icons__link:hover, .team-icons__link:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+.team-icons__icon:hover, .team-icons__icon:focus {
+  fill: currentColor;
+}
+
+.team__conte {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (max-width: 767px) {
+  .team__conte {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__conte {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+  }
 }/*# sourceMappingURL=main.css.map */
