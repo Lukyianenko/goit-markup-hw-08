@@ -542,4 +542,34 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.team {
+  background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 1199px) {
+  .section.team .section__title {
+    margin-bottom: 30px;
+  }
+}
+.team__item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__text {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: #757575;
+  line-height: 1.19;
 }/*# sourceMappingURL=main.css.map */
