@@ -14,10 +14,21 @@
         </head>
 <body>
     <!-- Header-->
-    <header class="page-header"> 
-        <div class="conteiner conteiner-nav">
+    <header class="page-header conteiner"> 
+        <div class="conteiner-nav">
+            <a href="/" class="logo"><span class="logo__item">Web</span>Studio</a>
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="list-conteiner">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <div class="page-nav__conteiner js-menu-container" id="list-conteiner">
+                <button type="button" class="menu-button-open js-close-menu" aria-expanded="false" aria-controls="list-conteiner">
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/icons.svg#close-menu"></use>
+                    </svg>
+                </button>
         <nav class="page-nav">
-        <a href="/" class="logo"><span class="logo__item">Web</span>Studio</a>
         <ul class="site-nav list">
             <li class="site-nav__item"><a href="/" class="site-nav__link">Студія</a> </li>
             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a> </li>
@@ -28,7 +39,25 @@
         <ul class="auth-nav list">
         <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class="auth-nav__link"><svg class="auth-nav__icon" width="16" height="12"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
         <li class="auth-nav__item"><a href="tel:+380961111111" class="auth-nav__link"><svg class="auth-nav__icon" width="10" height="16"><use href="./images/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
-        </ul>   
+        </ul>
+        <ul class="social-nav list">
+            <li class="social-nav__item">
+                <a href="" class="social-nav__link">Instagram</a>
+            </li>
+            <li class="social-nav__item"><span class="social-nav__line"></span></li>
+            <li class="social-nav__item">
+                <a href="" class="social-nav__link">Twitter</a>
+            </li>
+            <li class="social-nav__item"><span class="social-nav__line"></span></li>
+            <li class="social-nav__item">
+                <a href="" class="social-nav__link">Facebook</a>
+            </li>
+            <li class="social-nav__item"><span class="social-nav__line"></span></li>
+            <li class="social-nav__item">
+                <a href="" class="social-nav__link">LinkedIn</a>
+            </li>
+        </ul>
+        </div>   
         </div>  
     </header>
 <!--Main -->  
@@ -231,4 +260,5 @@
 </div>
     </div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
