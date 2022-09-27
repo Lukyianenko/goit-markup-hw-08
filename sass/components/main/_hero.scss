@@ -1,0 +1,95 @@
+.hero {
+    background-color: $primery-bg-color;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+@media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 100%;
+        margin-left: auto;
+    margin-right: auto;
+
+    color: #FFFFFF;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: calc( 42 / 26 );
+
+@media screen and (max-width: 1199px) {
+    max-width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+}
+}
+
+.hero__button {
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px 32px;
+    background-color: $accent-color;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.overlay {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+    height: 400px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    height: 400px;
+}
+}
+
+.overlay {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4));
+    // background-size: cover;
+
+    @media screen and (min-width: 768px) {
+        
+        background-image: url(../../images/herophonetablet.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {            background-image: url(../../images/herophone@2x.jpg);
+        background-size: cover;
+            }
+    }
+
+@media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: url(../../images/herophone.jpg);
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {            background-image: url(../../images/herophone@2x.jpg);
+    background-size: cover;
+        }
+}
+}
+
+
+
+

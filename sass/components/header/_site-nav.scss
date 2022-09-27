@@ -121,20 +121,6 @@
      }
     }
 }
-   
-// .auth-nav  {
-//     &__icon:hover,
-//     &__icon:focus
-//     {
-//         fill: $accent-color;
-//     }
-// }
-
-// .auth-nav {
-//     &__item + &__item {
-//     margin-left: 50px;
-//     }
-// }
 
 .auth-nav {
     @media screen and (max-width: 767px) {
