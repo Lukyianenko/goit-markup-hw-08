@@ -22,7 +22,7 @@
 }
 
 .site-nav {
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     &__item:not(:last-child) {
         margin-bottom: 32px;
     }
@@ -47,7 +47,7 @@
         transition: color 250ms $timing-function;
     }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     &__link {
             font-size: 40px;
             line-height: calc( 47 / 40 );
@@ -123,7 +123,7 @@
 }
 
 .auth-nav {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
     margin-bottom: 64px;
     display:flex;
 	flex-direction:column;
@@ -136,7 +136,7 @@
         transition: color 250ms $timing-function;
     }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     &__item {
         float: inline-end;
     }
@@ -167,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
     &__item:first-child {
         margin-bottom: 10px;
     }
