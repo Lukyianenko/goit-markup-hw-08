@@ -1285,12 +1285,12 @@ img {
 
 .filtr-page {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .filtr-page {
     width: 400px;
-    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1307,13 +1307,8 @@ img {
 .filtr-page__item + .filtr-page__item {
   margin-left: 8px;
 }
-@media screen and (max-width: 767.98px) {
-  .filtr-page__item:nth-child(3) {
-    margin-bottom: 15px;
-  }
-  .filtr-page__item:nth-child(4) {
-    margin-left: 0;
-  }
+.filtr-page__item {
+  margin-bottom: 15px;
 }
 
 .filtr-page__button {
