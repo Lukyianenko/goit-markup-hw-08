@@ -1368,8 +1368,12 @@ img {
   }
 }
 
+img {
+  width: 100%;
+}
+
 .portfolio-works__img {
-  max-width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio-works__img {
