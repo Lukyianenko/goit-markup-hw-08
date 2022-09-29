@@ -30,7 +30,7 @@
                 </button>
         <nav class="page-nav">
         <ul class="site-nav list">
-            <li class="site-nav__item"><a href="/" class="site-nav__link">Студія</a> </li>
+            <li class="site-nav__item"><a href="/index.html" class="site-nav__link">Студія</a> </li>
             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a> </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a> </li>
         </ul>
@@ -75,7 +75,24 @@
 <ul class="portfolio-works list">
     <li class="portfolio-works__item">
         <div class="portfolio-works__thumb">
-        <a href="" class="portfolio-works__link"><img class="portfolio-works__img" src="./images/portgolio/techno.jpg" alt="techno">
+        <a href="" class="portfolio-works__link"><picture class="portfolio-works__img">
+            <source 
+            srcset="./images/portfolio/techno.jpg 1x,
+                    ./images/portfolio/techno@2x.jpg 2x"
+            media="(min-width: 1200px)"
+            >
+            <source 
+            srcset="./images/portfolio/techno-tb.jpg 1x,
+                    ./images/portfolio/techno-tb@2x.jpg 2x"
+            media="(min-width: 768px)"
+            >
+            <source 
+            srcset="./images/portfolio/techno-mb.jpg 1x,
+                    ./images/portfolio/techno-mb@2x.jpg 2x"
+            media="(max-width: 767.98px)"
+            >
+        <img src="./images/portfolio/techno.jpg" alt="techno">
+        </picture>
             <div class="check-out">
                 <p class="check-out__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -89,7 +106,24 @@
     <li class="portfolio-works__item">
         <a href="" class="portfolio-works__link">
         <div class="portfolio-works__thumb">
-        <img class="portfolio-works__img" src="./images/portgolio/neworlean.jpg" alt="neworlean">
+<picture class="portfolio-works__img">
+            <source 
+            srcset="./images/portfolio/seafood.jpg 1x,
+                    ./images/portfolio/seafood@2x.jpg 2x"
+            media="(min-width: 1200px)"
+            >
+            <source 
+            srcset="./images/portfolio/seafood-tb.jpg 1x,
+                    ./images/portfolio/seafood-tb@2x.jpg 2x"
+            media="(min-width: 768px)"
+            >
+            <source 
+            srcset="./images/portfolio/seafood-mb.jpg 1x,
+                    ./images/portfolio/seafood-mb@2x.jpg 2x"
+            media="(max-width: 767.98px)"
+            >
+        <img src="./images/portfolio/seafood.jpg" alt="seafood">
+        </picture>
         <div class="check-out">
                 <p class="check-out__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
@@ -104,6 +138,16 @@
         <a href="" class="portfolio-works__link">
         <div class="portfolio-works__thumb">
         <picture class="portfolio-works__img">
+            <source 
+            srcset="./images/portfolio/seafood.jpg 1x,
+                    ./images/portfolio/seafood@2x.jpg 2x"
+            media="(min-width: 1200px)"
+            >
+            <source 
+            srcset="./images/portfolio/seafood-tb.jpg 1x,
+                    ./images/portfolio/seafood-tb@2x.jpg 2x"
+            media="(min-width: 768px)"
+            >
             <source 
             srcset="./images/portfolio/seafood-mb.jpg 1x,
                     ./images/portfolio/seafood-mb@2x.jpg 2x"
