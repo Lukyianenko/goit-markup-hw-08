@@ -324,7 +324,24 @@
     <li class="portfolio-works__item">
         <a href="" class="portfolio-works__link">
         <div class="portfolio-works__thumb">
-        <img class="portfolio-works__img" src="./images/portgolio/business.jpg" alt="business">
+            <picture class="portfolio-works__img">
+                <source 
+                srcset="./images/portfolio/business.jpg 1x,
+                        ./images/portfolio/business@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <source 
+                srcset="./images/portfolio/business-tb.jpg 1x,
+                        ./images/portfolio/business-tb@2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source 
+                srcset="./images/portfolio/business-mb.jpg 1x,
+                        ./images/portfolio/business-mb@2x.jpg 2x"
+                media="(max-width: 767.98px)"
+                >
+            <img src="./images/portfolio/business.jpg" alt="business">
+            </picture>
         <div class="check-out">
         <p class="check-out__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>

@@ -9,9 +9,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 77px 24px;
+    padding: 24px 24px;
     background-color: rgba(33, 150, 243, 0.9);
 
+    @media screen and (min-width: 375px) and (max-width: 479px) {
+        padding: 49px 24px;
+    }
+@media screen and (min-width: 480px) {
+        padding: 77px 24px;
+    }
 @media screen and (min-width: 768px) {
     padding-bottom: 49px;
     padding-top: 49px;
@@ -33,9 +39,22 @@
 }
 
 .check-out {
+    color: #FFFFFF;
+
+@media screen and (max-width: 374px) { 
+        font-size: 14px;
+        line-height: 1.56;
+    }   
+@media screen and (min-width: 375px) and (max-width: 479px) { 
+    font-size: 16px;
+    line-height: 1.56;
+}
+
+@media screen and (min-width: 480px) {
     &__text {
     font-size: 18px;
     line-height: 1.56;
     color: #FFFFFF;
     }
+}
 }

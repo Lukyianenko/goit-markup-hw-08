@@ -17,6 +17,12 @@
     }
 }
 
+.portfolio-works__item {
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 30px;
+    }
+}
+
 .portfolio-works__conte {
     max-width: 450px;
  
@@ -28,9 +34,6 @@
  }
  }
 
-img {
-    width: 100%;
-}
 .portfolio-works__img {
    width: 100%;
 
