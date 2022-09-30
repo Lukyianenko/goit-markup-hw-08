@@ -103,12 +103,23 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    .portfolio-works__item {
+
+    .portfolio-works {
         display: flex;
-        flex-direction: column;
     }
 
-    .exp {
+    .portfolio-works__item:first-child {    
+    .portfolio-works__link {
+        display: flex;
+        flex-direction: column;
+        height: 449px;
+    }
+    }
+    .portfolio-works__thumb {
+        height: 294px;
+    }
+
+    .portfolio-works__conte {
         flex-grow: 1;
     }
 }
