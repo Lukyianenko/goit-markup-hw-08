@@ -7,17 +7,17 @@
     @media screen and (min-width: 768px) { 
         display: flex;
         align-items: center;
-}     
+        margin-left: 87px;
+}  
+@media screen and (min-width: 1200px) {
+    margin-left: 93px;
+}   
 }
     
 .site-nav {
 @media screen and (min-width: 768px) {
     display: flex;
     position: relative;
-    margin-left: 87px;
-}
-@media screen and (min-width: 1200px) {
-    margin-left: 93px;
 }
 }
 
@@ -25,9 +25,6 @@
 @media screen and (max-width: 767.98px) {
     &__item:not(:last-child) {
         margin-bottom: 32px;
-    }
-    &__item:last-child {
-        margin-bottom: 302px;
     }
 }
 
@@ -97,14 +94,28 @@
 .auth-nav {
     display: inline-block;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: auto;
 }
 }
-    
+
+
+@media screen and (max-width: 767.98px) {
+.menu-bottom__auth {
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+}
+}
+
+.menu-bottom__auth {
+@media screen and (min-width: 768px) {
+    margin-left: auto;
+}
+}
+
 .auth-nav {
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
+margin-top: auto;
     &__icon {
         display: none;
     }
@@ -195,6 +206,7 @@
 
 .social-nav {
     display:flex;
+    flex-wrap: wrap;
     &__link {
         color: $accent-color;
         font-weight: 500;

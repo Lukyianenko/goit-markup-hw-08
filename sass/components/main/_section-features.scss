@@ -7,6 +7,10 @@
 }
 }
 
+.section.our-works {
+    padding-top: 0;
+}
+
 .features__icons {
     padding: 25px 100px;
     margin-bottom: 30px;
@@ -50,7 +54,7 @@
     }
 }
 
-.features__item {
+.features__item:not(:last-child) {
     @media screen and (max-width: 767.98px) {
         margin-bottom: 30px;
     }

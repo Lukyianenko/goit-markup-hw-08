@@ -67,6 +67,7 @@
     margin-left: -30px;
 }
 
+
 .portfolio-works {
     &__item {
     margin-top: 30px;
@@ -100,4 +101,15 @@
     line-height: 1.88;
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .portfolio-works__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exp {
+        flex-grow: 1;
+    }
+}
 

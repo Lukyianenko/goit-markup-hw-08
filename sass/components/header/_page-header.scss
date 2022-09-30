@@ -1,5 +1,5 @@
 .page-header {
-    position: relative;
+    // position: relative;
     background-color: $heder-bg-color;
     border-bottom: 1px solid #ECECEC;
 @media screen and (max-width: 767px) {
@@ -51,6 +51,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     background-color: $heder-bg-color;
     padding: 48px 40px;
     &.is-open {
@@ -63,6 +64,7 @@
     .page-nav__conteiner {
         display: flex;
         width: 100%;
+        align-items: center;
     }
 }
 

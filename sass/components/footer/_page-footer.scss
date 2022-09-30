@@ -44,21 +44,27 @@
 .adress-list {
     &__item:not(:last-child) {
     margin-bottom: 8px;
-    @media screen and (min-width: 1199.98px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 9px;
     }
     }
-@media screen and (max-width: 767.98px) {
-    &__item:last-child {
-        margin-bottom: 60px;
-    }
-}
+// @media screen and (max-width: 767.98px) {
+//     &__item:last-child {
+//         margin-bottom: 60px;
+//     }
+// }
 }
 
 .adress-list {
     &__link:hover,
     &__link:focus {
     color: $accent-color;
+    }
+}
+
+.adress-conte {
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 60px;
     }
 }
 

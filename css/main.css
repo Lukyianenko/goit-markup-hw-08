@@ -60,7 +60,6 @@ img {
 }
 
 .page-header {
-  position: relative;
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
 }
@@ -110,6 +109,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     padding: 48px 40px;
   }
@@ -121,6 +121,7 @@ img {
   .page-nav__conteiner {
     display: flex;
     width: 100%;
+    align-items: center;
   }
 }
 .conteiner-nav {
@@ -132,6 +133,12 @@ img {
   .page-nav {
     display: flex;
     align-items: center;
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-nav {
+    margin-left: 93px;
   }
 }
 
@@ -139,21 +146,12 @@ img {
   .site-nav {
     display: flex;
     position: relative;
-    margin-left: 87px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-left: 93px;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
-  }
-  .site-nav__item:last-child {
-    margin-bottom: 302px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -210,12 +208,26 @@ img {
   .auth-nav {
     display: inline-block;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
+  .menu-bottom__auth {
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-bottom__auth {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .auth-nav {
+    margin-top: auto;
+  }
   .auth-nav__icon {
     display: none;
   }
@@ -296,6 +308,7 @@ img {
 
 .social-nav {
   display: flex;
+  flex-wrap: wrap;
 }
 .social-nav__link {
   color: #2196F3;
@@ -388,24 +401,23 @@ img {
 .overlay {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-size: cover;
-  background-image: url(../images/herophonemobile.jpg);
+  background-image: url(../images/herophonemobile.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/herophonemobile@2x.jpg);
+    background-image: url(../images/herophonemobile@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: url(../images/herophonetablet.jpg);
+    background-image: url(../images/herophonetablet.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/herophonetablet@2x.jpg);
+    background-image: url(../images/herophonetablet@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-size: cover;
   }
 }
@@ -413,12 +425,12 @@ img {
   .overlay {
     max-width: 1600px;
     height: 600px;
-    background-image: url(../images/herophone.jpg);
+    background-image: url(../images/herophone.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/herophone@2x.jpg);
+    background-image: url(../images/herophone@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-size: cover;
   }
 }
@@ -432,6 +444,10 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.section.our-works {
+  padding-top: 0;
 }
 
 .features__icons {
@@ -476,7 +492,7 @@ img {
   }
 }
 @media screen and (max-width: 767.98px) {
-  .features__item {
+  .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -806,14 +822,9 @@ img {
 .adress-list__item:not(:last-child) {
   margin-bottom: 8px;
 }
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .adress-list__item:not(:last-child) {
     margin-bottom: 9px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .adress-list__item:last-child {
-    margin-bottom: 60px;
   }
 }
 
@@ -821,20 +832,19 @@ img {
   color: #2196F3;
 }
 
+@media screen and (max-width: 767.98px) {
+  .adress-conte {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-come {
-  width: 206px;
   padding: 0 0;
 }
 @media screen and (max-width: 767.98px) {
   .footer-come {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer-come {
-    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -850,9 +860,10 @@ img {
     align-items: baseline;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .footer-tablet {
     margin-bottom: 60px;
+    justify-content: space-around;
   }
 }
 .footer-come__link {
@@ -871,18 +882,13 @@ img {
 }
 
 .footer-come__list {
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
   .foot-conte {
     display: flex;
-  }
-}
-@media screen and (max-width: 1199.98px) and (min-width: 768px) {
-  .foot-conte {
-    padding-left: 76px;
-    padding-right: 89px;
   }
 }
 
@@ -894,6 +900,7 @@ img {
 .footer-come__list {
   display: flex;
   padding: 0 0;
+  gap: 10px;
 }
 
 .footer-come__link:hover, .footer-come__link:focus {
@@ -940,7 +947,7 @@ img {
 
 .footer-sign input {
   padding: 15px 16px;
-  max-width: 450px;
+  width: 450px;
   height: 50px;
   border-radius: 4px;
   background-color: #2F303A;
@@ -1307,8 +1314,10 @@ img {
 .filtr-page__item + .filtr-page__item {
   margin-left: 8px;
 }
-.filtr-page__item {
-  margin-bottom: 15px;
+@media screen and (max-width: 767.98px) {
+  .filtr-page__item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
 }
 
 .filtr-page__button {
@@ -1435,6 +1444,15 @@ img {
   line-height: 1.88;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio-works__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .exp {
+    flex-grow: 1;
+  }
+}
 .portfolio-works__thumb {
   position: relative;
   overflow: hidden;
