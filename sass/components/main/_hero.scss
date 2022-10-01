@@ -64,26 +64,26 @@
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
-    background-image: url(../images/herophonemobile.jpg), linear-gradient( to right,
+    background-image: linear-gradient( to right,
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4));
+    rgba(47, 48, 58, 0.4)), url(../images/herophonemobile.jpg);
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {            background-image: url(../images/herophonemobile@2x.jpg), linear-gradient( to right,
+screen and (min-resolution: 2dppx) {            background-image: linear-gradient( to right,
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4));
+    rgba(47, 48, 58, 0.4)), url(../images/herophonemobile@2x.jpg);
 background-size: cover;
     }
 
 @media screen and (min-width: 768px) {
-                background-image: url(../images/herophonetablet.jpg), linear-gradient( to right,
+                background-image: linear-gradient( to right,
                 rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4));
+                rgba(47, 48, 58, 0.4)), url(../images/herophonetablet.jpg);
 @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {            background-image: url(../images/herophonetablet@2x.jpg), linear-gradient( to right,
+        screen and (min-resolution: 2dppx) {            background-image: linear-gradient( to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
+            rgba(47, 48, 58, 0.4)), url(../images/herophonetablet@2x.jpg);
         background-size: cover;
             }
     }
@@ -91,14 +91,14 @@ background-size: cover;
 @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
-    background-image: url(../images/herophone.jpg), linear-gradient( to right,
+    background-image: linear-gradient( to right,
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4));
+    rgba(47, 48, 58, 0.4)), url(../images/herophone.jpg); 
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {            background-image: url(../images/herophone@2x.jpg), linear-gradient( to right,
+    screen and (min-resolution: 2dppx) {            background-image: linear-gradient( to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4));
+        rgba(47, 48, 58, 0.4)), url(../images/herophone@2x.jpg), ;
     background-size: cover;
         }
 }
